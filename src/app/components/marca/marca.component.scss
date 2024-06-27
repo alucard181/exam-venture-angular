@@ -1,0 +1,66 @@
+@import '../../../styles';
+
+.marca-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    img {
+        max-width: 200px;
+        margin: auto;
+    }
+    
+    button {
+        color: white;
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.mosaic-view,
+.gallery-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.mosaic-item,
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    mat-card-content h3 {
+        color: $primary-color;
+        margin-bottom: 10px;
+    }
+
+    mat-card-content p {
+        color: $secondary-text-color;
+    }
+
+    button {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($primary-color, 10%);
+        }
+    }
+}
+
+.gallery-item {
+    flex: 1 1 calc(20% - 20px);
+}

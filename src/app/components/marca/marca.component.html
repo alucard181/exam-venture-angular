@@ -1,0 +1,32 @@
+<div class="marca-container">
+    <div class="controls">
+      <button mat-button (click)="changeView('mosaic')">Mosaic View</button>
+      <button mat-button (click)="changeView('gallery')">Gallery View</button>
+      <button mat-button (click)="changeSort('name')">Sort by Name</button>
+      <button mat-button (click)="changeSort('description')">Sort by Description</button>
+    </div>
+  
+    <div *ngIf="view === 'mosaic'" class="mosaic-view">
+      <mat-card *ngFor="let marca of displayedMarcas" class="mosaic-item">
+        <img mat-card-image [src]="marca.image" alt="{{marca.name}}">
+        <mat-card-content>
+          <h3>{{ marca.name }}</h3>
+          <p>{{ marca.description }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>Get Coupon</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  
+    <div *ngIf="view === 'gallery'" class="gallery-view">
+      <mat-card *ngFor="let marca of displayedMarcas" class="gallery-item">
+        <img mat-card-image [src]="marca.image" alt="{{marca.name}}">
+        <mat-card-actions>
+          <button mat-button>Get Coupon</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  
+    <button class="" mat-button (click)="loadMore()">More Instant Coupons</button>
+  </div>

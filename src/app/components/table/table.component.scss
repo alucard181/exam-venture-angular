@@ -1,0 +1,46 @@
+.exam-table-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h1 {
+    color: #3f51b5;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  h2 {
+    color: #ff4081;
+    font-size: 24px;
+    font-weight: 700;
+    display: inline;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #3f51b5;
+      color: white;
+    }
+
+    .mat-checkbox {
+      vertical-align: middle;
+    }
+  }
+}

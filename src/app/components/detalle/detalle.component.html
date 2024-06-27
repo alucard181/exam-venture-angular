@@ -1,0 +1,14 @@
+<div class="detalle-container">
+    <h1>Unlock the full power of</h1>
+    <div class="detalle-cards">
+      <mat-card *ngFor="let detalle of detalles" class="detalle-item">
+        <img mat-card-image [src]="detalle.image" alt="{{detalle.name}}">
+        <mat-card-content>
+          <h3>{{ detalle.name }}</h3>
+          <p>{{ detalle.description }}</p>
+          <span class="cashback">{{ detalle.cashback }} Cashback</span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <button mat-button class="link-card-button">Link Your Card</button>
+  </div>

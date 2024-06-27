@@ -1,0 +1,63 @@
+@import '../../../styles';
+
+.detalle-container {
+    text-align: center;
+    padding: 150px;
+    background: linear-gradient(180deg, $primary-color, $background-color);
+
+    h1 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .detalle-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .detalle-item {
+        flex: 1 1 calc(25% - 20px);
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px;
+
+        mat-card-content {
+            h3 {
+                color: $primary-color;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: $secondary-text-color;
+                margin-bottom: 10px;
+            }
+
+            .cashback {
+                color: $accent-color;
+                font-weight: bold;
+            }
+        }
+
+        img {
+            margin: auto;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+    }
+
+    .link-card-button {
+        background-color: $primary-color;
+        color: white;
+        margin-top: 20px;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: lighten($primary-color, 10%);
+        }
+    }
+}

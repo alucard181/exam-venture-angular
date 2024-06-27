@@ -1,0 +1,22 @@
+<header class="exam-header">
+    <div class="exam-header-container">
+        <app-menu></app-menu>
+        <div *ngIf="loggedIn; else showlogin">
+            <div class="exam-username">
+                {{ 'bienvenidoUsuario' | translate }} {{username}}
+            </div>
+            <button mat-button (click)="logout()">{{ 'cerrarSesion' | translate }}</button>
+        </div>
+        <ng-template #showlogin>
+            <div>
+                <button mat-button (click)="openLoginModal()">{{ 'login' | translate }}</button>
+            </div>
+        </ng-template>
+        <div>
+            <select (change)="changeLanguage($event)" [value]="currentLanguage">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,24 @@
+<div class="exam-table-container">
+    <h1>Link your bussines card</h1><br />
+    <h1>to <h2>unlock cashback</h2> offers</h1>
+    <table mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="feature">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td mat-cell *matCellDef="let data"> {{data.feature}} </td>
+        </ng-container>
+        <ng-container matColumnDef="noLink">
+            <th mat-header-cell *matHeaderCellDef> No card linking required </th>
+            <td mat-cell *matCellDef="let data">
+                <mat-checkbox [checked]="data.noLink" disabled></mat-checkbox>
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="link">
+            <th mat-header-cell *matHeaderCellDef> Link your card to get </th>
+            <td mat-cell *matCellDef="let data">
+                <mat-checkbox [checked]="data.link" disabled></mat-checkbox>
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

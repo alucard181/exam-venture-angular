@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="es">
+    <body>
+      <trans-unit id="examenAplicacion" datatype="html">
+        <source>Examen Aplicacion</source>
+        <target>Examen Aplicación</target>
+      </trans-unit>
+      <trans-unit id="bienvenidoUsuario" datatype="html">
+        <source>Bienvenido {{username}}</source>
+        <target>Bienvenido {{username}}</target>
+      </trans-unit>
+      <trans-unit id="cerrarSesion" datatype="html">
+        <source>Cerrar sesión</source>
+        <target>Cerrar sesión</target>
+      </trans-unit>
+      <trans-unit id="login" datatype="html">
+        <source>Login</source>
+        <target>Iniciar sesión</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
