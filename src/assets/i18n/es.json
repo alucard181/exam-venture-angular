@@ -9,5 +9,10 @@
   "cookiepolicy": "Politica de cookie",
   "detalle": "Detalle",
   "marca": "Marca",
-  "table": "Tabla"
+  "table": "Tabla",
+  "MosaicView": "Vista Mosaico",
+  "GalleryView": "Vista Galeria",
+  "SortbyName": "Ordenamiento por Nombre",
+  "SortbyDescription": "Ordenamiento por Descripción",
+  "ExploreInstantCoupons": "Explora cupones instantaneos"
 }

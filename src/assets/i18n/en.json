@@ -9,5 +9,10 @@
   "cookiepolicy": "Cookie Policy",
   "detalle": "Detail",
   "marca": "Brand",
-  "table": "Table"
+  "table": "Table",
+  "MosaicView": "Mosaic View",
+  "GalleryView": "Gallery View",
+  "SortbyName": "Sort by Name",
+  "SortbyDescription": "Sort by Descripcion",
+  "ExploreInstantCoupons": "Explore Instant Coupons"
 }

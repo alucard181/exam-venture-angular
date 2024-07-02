@@ -1,5 +1,26 @@
 @import '../../../styles';
 
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .category-button {
+        background-color: #e0e0e0;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #c0c0c0;
+        }
+    }
+}
+
+
 .marca-container {
     width: 100%;
     max-width: 1200px;
@@ -10,7 +31,7 @@
         max-width: 200px;
         margin: auto;
     }
-    
+
     button {
         color: white;
     }
